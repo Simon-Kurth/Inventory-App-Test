@@ -9,7 +9,6 @@ define(['jquery',
         var InventoryView = Backbone.View.extend({
         el: '#items',
 
-        
         // initialize inventory view, load up sample data from app.js, call render function
         initialize: function( initialInventory ) {
             this.collection = new Inventory( initialInventory );
@@ -22,7 +21,7 @@ define(['jquery',
         'submit':'addItem'
         },
 
-        // add validated form data to model
+        // add validated form data to the collection
         addItem: function( e ) {
             e.preventDefault();
 
@@ -42,7 +41,7 @@ define(['jquery',
 
         },
 
-        // render inventory by rendering each book in its collection
+        // render inventory by outputing each item in the collection
         render: function() {
             this.collection.each(function( item ) {
                 this.renderItem( item );
