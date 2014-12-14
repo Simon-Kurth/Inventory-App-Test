@@ -23,8 +23,9 @@ Less
 - Used variables to reference repeated values.
 - Used imports to improve readability and organize style sheets.
 - Used css to generate form validation styles
+- Incorporated webkit for required field styles and buttons 
 
 Html5
-- Use form validation, numbers, autofocus, and placeholder text
+- Use form validation, required fields, numbers, and placeholder text
 
 
