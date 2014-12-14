@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Inventory App Test</title>
+ 
+    <link rel="stylesheet" href="assets/less/style.css">
+</head>
+
+<body>
+
+  <!-- define inventory item add form layout-->
+  <div id="items">
+    <form class="item_form" id="addItem" action="#" name="item_form">
+      <div>
+          <ul>
+            <li>
+                 <h2>Inventory App Test</h2>
+                 <span class="required_notification">* Denotes Required Field</span>
+            </li>
+            <li>
+                <label for="component">Component:</label>
+                <input type="text" name="component" id="component"placeholder="Component" required/>
+            </li>
+            <li>
+                <label for="stockQty">Stock Qty:</label>
+                <input type="number" name="stockQty" id="stockQty"placeholder="Stock Qty" required/>
+            </li>
+            <li>
+                <label for="reorderQty">Reorder #:</label>
+                <input type="number" number="reorderQty" id="reorderQty" placeholder="Reorder #" />
+            </li>
+            <li>
+                <label for="qtyPerCrane">Qty per Crane:</label>
+                <input type="number" name="qtyPerCrane" id="qtyPerCrane" placeholder="Qty per Crane" required/>
+            </li>
+            <li>
+                <label for="vendorId">Vendor Name:</label>
+                <input type="text" name="vendorID" id="vendorID" placeholder="Vendor Name" />
+            </li>
+            <li>
+               <button class="submit" id="submit" >Add</button>
+            </li>
+          </ul>
+        </div>
+      </form>
+
+      <!-- define grid layout and populate table headers-->
+      <div class="grid">
+        <table id="inventory-grid">
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>Stock Qty</th>
+              <th>Reorder Qty</th>
+              <th>Qty Per Crane</th>
+              <th>Vendor Name</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody id="inventory-holder"></tbody>
+        </table>
+      </div>
+  </div>
+
+<!-- render inventory items-->
+  <script id="inventoryTemplate" type="text/template">
+      <td>  <%= component %>                                </td>
+      <td>  <%= stockQty %>                                 </td>
+      <td>  <%= qtyPerCrane %>                              </td>
+      <td>  <%= reorderQty %>                               </td>
+      <td>  <%= vendorID %>                                 </td>
+      <td>  <button class="delete">Delete</button>          </td>
+ </script>
+
+ <!-- load main.js-->
+ <script data-main='js/main' src="js/lib/require-min.js"></script>
+  
+</body>
+</html>

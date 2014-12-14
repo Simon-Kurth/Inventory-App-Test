@@ -1,0 +1,50 @@
+// filepath: assets/less/button.less
+
+// variables
+@bg_color1: #68b12f;
+@bg_color2: #50911e;
+@radius: 5px;
+@shadow: 0 1px 0 0 #9fd574 inset;
+@active_shadow: 0 0 10px 5px #356b0b inset;
+
+.button_style {
+    background-color: @bg_color1;
+    background: -webkit-gradient(linear, left top, left bottom, from(@bg_color1), to(@bg_color2));
+    background: -webkit-linear-gradient(top, @bg_color1, @bg_color2);
+    background: -moz-linear-gradient(top, @bg_color1, @bg_color2);
+    background: -ms-linear-gradient(top, @bg_color1, @bg_color2);
+    background: -o-linear-gradient(top, @bg_color1, @bg_color2);
+    background: linear-gradient(top, @bg_color1, @bg_color2);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    box-shadow: @shadow;
+    -webkit-box-shadow: @shadow;
+    -moz-box-shadow: @shadow;
+    -ms-box-shadow: @shadow;
+    -o-box-shadow: @shadow;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+
+    &:hover {
+        opacity:.85;
+        cursor: pointer; 
+    }
+    &:active {
+        border: 1px solid #20911e;
+        box-shadow: @active_shadow; 
+        -webkit-box-shadow:@active_shadow;
+        -moz-box-shadow: @active_shadow;
+        -ms-box-shadow: @active_shadow;
+        -o-box-shadow: @active_shadow;           
+    }
+}
+
+

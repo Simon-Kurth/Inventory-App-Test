@@ -1,0 +1,40 @@
+// filepath: assets/less/grid.less  
+
+// variables
+@grid_pad: 5px;
+@text_alignment: left;
+
+.grid { 
+    table {
+        font-family: @form_font;
+        border-collapse: collapse;
+     	th  {
+          text-align: @text_alignment;
+          padding: @grid_pad;
+      	}
+      	tr {
+            border: 1px solid lighten(@grid_color, 80%);
+        }
+      	td {
+            padding: @grid_pad;
+        }
+    }
+}
+
+#inventory-grid {
+    width: 870px;
+    height: 30px;
+    background-color: #fff;
+    float: left;
+    margin: @grid_pad;
+
+	th{
+	  text-align: @text_alignment;
+	}
+	span {
+    list-style-type: none;
+    margin-bottom: 0;
+	}
+}
+
+
