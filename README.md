@@ -1,15 +1,13 @@
 Inventory-App-Test
 ==================
 
-sample project designed to practice using backbone, require.js, less, css, and  html5
-
-This sample application was developed to demonstrate and understanding of how to use the technologies mentioned above. 
+This sample application was developed to practice using backbone, require.js, less, css, and html5. Below I have listed some highlighted items that I focused on using in this app. 
 
 Backbone
 - Models, Views, and Collections to manage data
 - Using localStorage to retain data
-- Underscore.js to reference template
-- Add, Delete, and form reset functionality
+- Underscore.js to reference templates
+- Add, delete, and form reset functionality
 
 Require.js
 - Reconfigured backbone files and file structure to use require.js to modularly load files. 
@@ -26,6 +24,6 @@ Less
 - Incorporated webkit for required field styles and buttons 
 
 Html5
-- Use form validation, required fields, numbers, and placeholder text
+- Use form validation, required fields, numbers, and placeholder text in the form
 
 
