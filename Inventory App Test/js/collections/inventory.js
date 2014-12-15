@@ -2,7 +2,7 @@
 
 define(['jquery','backbone', 'models/item'], function($,Backbone, Item) { 
 
-		var Inventory = Backbone.Collection.extend({
+	var Inventory = Backbone.Collection.extend({
 	    model: Item
 	});
 		
